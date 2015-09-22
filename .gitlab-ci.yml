@@ -1,0 +1,15 @@
+types:
+  - test
+
+xcs:
+  type: test
+  script:
+    - "/Applications/CaveJohnson.app/Contents/MacOS/CaveJohnsonCLI forceGitLabBranch --branchName CaveJohnsonAuto --hostname code.sealedabstract.com --projectID 17"
+    - "sleep 1" 
+    - "/Applications/CaveJohnson.app/Contents/MacOS/CaveJohnsonCLI xcsIntegrateNow --botID 31b0b0bb4b62ed4d8a5f6eccaf4d6edd --hostname localhost --sslPolicy localhost"
+    - "/Applications/CaveJohnson.app/Contents/MacOS/CaveJohnsonCLI waitForIntegration --hostname localhost --botID 31b0b0bb4b62ed4d8a5f6eccaf4d6edd --sslPolicy localhost"
+    - "/Applications/CaveJohnson.app/Contents/MacOS/CaveJohnsonCLI xcsStatusToShell --hostname localhost --botID 31b0b0bb4b62ed4d8a5f6eccaf4d6edd --sslPolicy localhost"
+  only:
+    - master
+  tags:
+    - xc7
