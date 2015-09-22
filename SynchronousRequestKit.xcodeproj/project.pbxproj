@@ -10,6 +10,8 @@
 		3A0D8F841BB1299100A8ED0C /* SynchronousRequestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A0D8F831BB1299100A8ED0C /* SynchronousRequestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A0D8F8B1BB1299100A8ED0C /* SynchronousRequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0D8F801BB1299100A8ED0C /* SynchronousRequestKit.framework */; settings = {ASSET_TAGS = (); }; };
 		3A0D8F901BB1299100A8ED0C /* SynchronousRequestKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D8F8F1BB1299100A8ED0C /* SynchronousRequestKitTests.swift */; };
+		3A0D8F9B1BB129B900A8ED0C /* NSURLSession+Synchronous.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D8F9A1BB129B900A8ED0C /* NSURLSession+Synchronous.swift */; settings = {ASSET_TAGS = (); }; };
+		3A0D8FC31BB12B1400A8ED0C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D8FC21BB12B1400A8ED0C /* LICENSE */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		3A0D8F8A1BB1299100A8ED0C /* SynchronousRequestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SynchronousRequestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0D8F8F1BB1299100A8ED0C /* SynchronousRequestKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronousRequestKitTests.swift; sourceTree = "<group>"; };
 		3A0D8F911BB1299100A8ED0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A0D8F9A1BB129B900A8ED0C /* NSURLSession+Synchronous.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURLSession+Synchronous.swift"; sourceTree = "<group>"; };
+		3A0D8FC21BB12B1400A8ED0C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 		3A0D8F761BB1299100A8ED0C = {
 			isa = PBXGroup;
 			children = (
+				3A0D8FC21BB12B1400A8ED0C /* LICENSE */,
 				3A0D8F821BB1299100A8ED0C /* SynchronousRequestKit */,
 				3A0D8F8E1BB1299100A8ED0C /* SynchronousRequestKitTests */,
 				3A0D8F811BB1299100A8ED0C /* Products */,
@@ -73,6 +78,7 @@
 			children = (
 				3A0D8F831BB1299100A8ED0C /* SynchronousRequestKit.h */,
 				3A0D8F851BB1299100A8ED0C /* Info.plist */,
+				3A0D8F9A1BB129B900A8ED0C /* NSURLSession+Synchronous.swift */,
 			);
 			path = SynchronousRequestKit;
 			sourceTree = "<group>";
@@ -142,6 +148,7 @@
 		3A0D8F771BB1299100A8ED0C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = DrewCrawfordApps;
 				TargetAttributes = {
@@ -176,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0D8FC31BB12B1400A8ED0C /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0D8F9B1BB129B900A8ED0C /* NSURLSession+Synchronous.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +311,7 @@
 		3A0D8F951BB1299100A8ED0C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -314,12 +324,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dca.SynchronousRequestKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		3A0D8F961BB1299100A8ED0C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
