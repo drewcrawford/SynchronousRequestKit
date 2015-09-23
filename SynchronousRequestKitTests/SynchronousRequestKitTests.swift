@@ -9,6 +9,12 @@
 import XCTest
 @testable import SynchronousRequestKit
 
+func notInt() -> Int! {
+    return nil
+}
+
+let n = notInt()!
+
 class SynchronousRequestKitTests: XCTestCase {
     
     override func setUp() {
@@ -22,6 +28,7 @@ class SynchronousRequestKitTests: XCTestCase {
     }
     
     func testExample() {
+        print("\(n)")
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
