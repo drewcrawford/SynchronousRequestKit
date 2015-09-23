@@ -1,7 +1,7 @@
 //
 //  NSURLSession+Synchronous.swift
 //  SynchronousRequestKit
-//
+//  Created by Drew Crawford on 8/8/14
 //  This file is part of SynchronousRequestKit.  It is subject to the license terms in the LICENSE
 //  file found in the top level of this distribution
 //  No part of SynchronousRequestKit, including this file, may be copied, modified,
