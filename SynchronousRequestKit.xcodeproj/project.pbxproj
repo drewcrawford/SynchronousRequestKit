@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3A0D8F841BB1299100A8ED0C /* SynchronousRequestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A0D8F831BB1299100A8ED0C /* SynchronousRequestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A0D8F8B1BB1299100A8ED0C /* SynchronousRequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0D8F801BB1299100A8ED0C /* SynchronousRequestKit.framework */; settings = {ASSET_TAGS = (); }; };
+		3A0D8F8B1BB1299100A8ED0C /* SynchronousRequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0D8F801BB1299100A8ED0C /* SynchronousRequestKit.framework */; };
 		3A0D8F901BB1299100A8ED0C /* SynchronousRequestKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D8F8F1BB1299100A8ED0C /* SynchronousRequestKitTests.swift */; };
-		3A0D8F9B1BB129B900A8ED0C /* NSURLSession+Synchronous.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D8F9A1BB129B900A8ED0C /* NSURLSession+Synchronous.swift */; settings = {ASSET_TAGS = (); }; };
-		3A0D8FC31BB12B1400A8ED0C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D8FC21BB12B1400A8ED0C /* LICENSE */; settings = {ASSET_TAGS = (); }; };
+		3A0D8F9B1BB129B900A8ED0C /* NSURLSession+Synchronous.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D8F9A1BB129B900A8ED0C /* NSURLSession+Synchronous.swift */; };
+		3A0D8FC31BB12B1400A8ED0C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D8FC21BB12B1400A8ED0C /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -344,6 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dca.SynchronousRequestKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -388,6 +389,7 @@
 				3A0D8F961BB1299100A8ED0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A0D8F971BB1299100A8ED0C /* Build configuration list for PBXNativeTarget "SynchronousRequestKitTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +398,7 @@
 				3A0D8F991BB1299100A8ED0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
