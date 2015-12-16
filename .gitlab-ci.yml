@@ -21,13 +21,13 @@ xcs:
   tags:
     - xc7
 
-archive:
+archive-mac:
    type: package
    script:
       - "CJ=/Applications/CaveJohnson.app/Contents/MacOS/CaveJohnsonCLI"
       - "CARTHAGE=/usr/local/bin/carthage"
       - "$CJ setVersion --infoPlistPath $FRAMEWORK_NAME/Info.plist --version ${CI_BUILD_ID}"
-      - "$CARTHAGE build --no-skip-current"
+      - "$CARTHAGE build --no-skip-current --platform osx"
       - "$CARTHAGE archive $FRAMEWORK_NAME"
 
       - "ZIPFILE=$($CJ getNameVersionString --infoPlistPath $FRAMEWORK_NAME/Info.plist --productName $FRAMEWORK_NAME)-dev-${CI_BUILD_ID}.zip"
@@ -40,3 +40,24 @@ archive:
    artifacts:
       paths:
       - /tmp/SynchronousRequestKit/
+
+archive-ios:
+   type: package
+   script:
+      - "CJ=/Applications/CaveJohnson.app/Contents/MacOS/CaveJohnsonCLI"
+      - "CARTHAGE=/usr/local/bin/carthage"
+      - "$CJ setVersion --infoPlistPath $FRAMEWORK_NAME/Info.plist --version ${CI_BUILD_ID}"
+      - "$CARTHAGE build --no-skip-current --platform ios"
+      - "$CARTHAGE archive $FRAMEWORK_NAME"
+
+      - "ZIPFILE=$($CJ getNameVersionString --infoPlistPath $FRAMEWORK_NAME/Info.plist --productName $FRAMEWORK_NAME)-dev-${CI_BUILD_ID}.zip"
+      - "rm -rf /tmp/$FRAMEWORK_NAME/"
+      - "mkdir -p /tmp/$FRAMEWORK_NAME"
+      - "mv $FRAMEWORK_NAME.framework.zip /tmp/$FRAMEWORK_NAME/$ZIPFILE"
+   only:
+    - master
+
+   artifacts:
+      paths:
+      - /tmp/SynchronousRequestKit/
+
