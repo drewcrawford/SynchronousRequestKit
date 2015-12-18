@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3A9E705B1C21540E00C9430F"
-               BuildableName = "SynchronousRequestKit-iOS.framework"
+               BuildableName = "SynchronousRequestKit.framework"
                BlueprintName = "SynchronousRequestKit-iOS"
                ReferencedContainer = "container:SynchronousRequestKit.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3A9E705B1C21540E00C9430F"
-            BuildableName = "SynchronousRequestKit-iOS.framework"
+            BuildableName = "SynchronousRequestKit.framework"
             BlueprintName = "SynchronousRequestKit-iOS"
             ReferencedContainer = "container:SynchronousRequestKit.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3A9E705B1C21540E00C9430F"
-            BuildableName = "SynchronousRequestKit-iOS.framework"
+            BuildableName = "SynchronousRequestKit.framework"
             BlueprintName = "SynchronousRequestKit-iOS"
             ReferencedContainer = "container:SynchronousRequestKit.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3A9E705B1C21540E00C9430F"
-            BuildableName = "SynchronousRequestKit-iOS.framework"
+            BuildableName = "SynchronousRequestKit.framework"
             BlueprintName = "SynchronousRequestKit-iOS"
             ReferencedContainer = "container:SynchronousRequestKit.xcodeproj">
          </BuildableReference>

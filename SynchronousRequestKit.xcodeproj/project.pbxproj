@@ -12,6 +12,7 @@
 		3A0D8F901BB1299100A8ED0C /* SynchronousRequestKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D8F8F1BB1299100A8ED0C /* SynchronousRequestKitTests.swift */; };
 		3A0D8F9B1BB129B900A8ED0C /* NSURLSession+Synchronous.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D8F9A1BB129B900A8ED0C /* NSURLSession+Synchronous.swift */; };
 		3A0D8FC31BB12B1400A8ED0C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D8FC21BB12B1400A8ED0C /* LICENSE */; };
+		3A98E1F41C240F3000B267A0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D8FC21BB12B1400A8ED0C /* LICENSE */; };
 		3A9E705F1C21540E00C9430F /* SynchronousRequestKit-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A9E705E1C21540E00C9430F /* SynchronousRequestKit-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A9E70661C21540F00C9430F /* SynchronousRequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9E705C1C21540E00C9430F /* SynchronousRequestKit.framework */; };
 		3A9E706B1C21540F00C9430F /* SynchronousRequestKit_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9E706A1C21540F00C9430F /* SynchronousRequestKit_iOSTests.swift */; };
@@ -304,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A98E1F41C240F3000B267A0 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +618,7 @@
 				3A9E706F1C21540F00C9430F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A9E70701C21540F00C9430F /* Build configuration list for PBXNativeTarget "SynchronousRequestKit-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -624,6 +627,7 @@
 				3A9E70721C21540F00C9430F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
