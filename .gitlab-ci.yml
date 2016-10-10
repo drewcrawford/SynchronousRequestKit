@@ -23,7 +23,7 @@ archive-mac:
     - carthage
 
 
-archive-mac:
+archive-ios:
   type: package
   script:
       - "carthage build --no-skip-current --platform ios"
