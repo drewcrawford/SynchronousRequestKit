@@ -12,6 +12,7 @@
 		3A0D8F901BB1299100A8ED0C /* SynchronousRequestKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D8F8F1BB1299100A8ED0C /* SynchronousRequestKitTests.swift */; };
 		3A0D8F9B1BB129B900A8ED0C /* NSURLSession+Synchronous.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D8F9A1BB129B900A8ED0C /* NSURLSession+Synchronous.swift */; };
 		3A0D8FC31BB12B1400A8ED0C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D8FC21BB12B1400A8ED0C /* LICENSE */; };
+		3A380DC01DAB431500B04D84 /* NOTICE in Resources */ = {isa = PBXBuildFile; fileRef = 3A380DBF1DAB431500B04D84 /* NOTICE */; };
 		3A98E1F41C240F3000B267A0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D8FC21BB12B1400A8ED0C /* LICENSE */; };
 		3A9E705F1C21540E00C9430F /* SynchronousRequestKit-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A9E705E1C21540E00C9430F /* SynchronousRequestKit-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A9E70661C21540F00C9430F /* SynchronousRequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9E705C1C21540E00C9430F /* SynchronousRequestKit.framework */; };
@@ -45,6 +46,7 @@
 		3A0D8F911BB1299100A8ED0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A0D8F9A1BB129B900A8ED0C /* NSURLSession+Synchronous.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURLSession+Synchronous.swift"; sourceTree = "<group>"; };
 		3A0D8FC21BB12B1400A8ED0C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3A380DBF1DAB431500B04D84 /* NOTICE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE; sourceTree = "<group>"; };
 		3A9E705C1C21540E00C9430F /* SynchronousRequestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SynchronousRequestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9E705E1C21540E00C9430F /* SynchronousRequestKit-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SynchronousRequestKit-iOS.h"; sourceTree = "<group>"; };
 		3A9E70601C21540E00C9430F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		3A0D8F761BB1299100A8ED0C = {
 			isa = PBXGroup;
 			children = (
+				3A380DBF1DAB431500B04D84 /* NOTICE */,
 				3A0D8FC21BB12B1400A8ED0C /* LICENSE */,
 				3A0D8F821BB1299100A8ED0C /* SynchronousRequestKit */,
 				3A0D8F8E1BB1299100A8ED0C /* SynchronousRequestKitTests */,
@@ -292,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A380DC01DAB431500B04D84 /* NOTICE in Resources */,
 				3A0D8FC31BB12B1400A8ED0C /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
