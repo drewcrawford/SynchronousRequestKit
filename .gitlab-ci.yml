@@ -20,6 +20,9 @@ archive-mac:
       - bin/
   environment:
     DEVELOPER_DIR=/Applications/Xcode8.app/Contents/Developer
+  tags:
+    - xcode8symlink
+    - carthage
 
 
 archive-mac:
@@ -35,4 +38,7 @@ archive-mac:
       - bin/
   environment:
     DEVELOPER_DIR=/Applications/Xcode8.app/Contents/Developer
+  tags:
+    - xcode8symlink
+    - carthage
 
