@@ -3,41 +3,39 @@ types:
   - package
 
 variables:
-  XCSBOT: "31b0b0bb4b62ed4d8a5f6eccaf4d6edd"
-  GITLAB_PROJECT_ID: "17"
   FRAMEWORK_NAME: "SynchronousRequestKit"
 
 archive-mac:
-   type: package
-   script:
+  type: package
+  script:
       - "carthage build --no-skip-current --platform osx"
       - "carthage archive $FRAMEWORK_NAME"
       - mkdir bin
       - mv SynchronousRequestKit.framework.zip bin/SynchronousRequestKit-OSX-${CI_BUILD_ID}.zip
 
-   artifacts:
+  artifacts:
       paths:
       - bin/
-  environment:
-    DEVELOPER_DIR=/Applications/Xcode8.app/Contents/Developer
+  variables:
+    DEVELOPER_DIR: "/Applications/Xcode8.app/Contents/Developer"
   tags:
     - xcode8symlink
     - carthage
 
 
 archive-mac:
-   type: package
-   script:
+  type: package
+  script:
       - "carthage build --no-skip-current --platform ios"
       - "carthage archive $FRAMEWORK_NAME"
       - mkdir bin
       - mv SynchronousRequestKit.framework.zip bin/SynchronousRequestKit-iOS-${CI_BUILD_ID}.zip
 
-   artifacts:
+  artifacts:
       paths:
       - bin/
-  environment:
-    DEVELOPER_DIR=/Applications/Xcode8.app/Contents/Developer
+  variables:
+    DEVELOPER_DIR: "/Applications/Xcode8.app/Contents/Developer"
   tags:
     - xcode8symlink
     - carthage
