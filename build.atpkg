@@ -1,0 +1,13 @@
+(package
+  :name "SynchronousRequestKit"
+
+  :tasks {
+    :default {
+      :tool "atllbuild"
+      :sources ["SynchronousRequestKit/**.swift"]
+      :name "SynchronousRequestKit"
+      :output-type "static-library"
+      :publish-product true
+    }
+  }
+)
